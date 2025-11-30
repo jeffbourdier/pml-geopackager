@@ -370,7 +370,7 @@ class PipelineMLGeoPackagerAlgorithm(QgsProcessingAlgorithm):
         # Add the input parameter: a PipelineML file.
         parameter = QgsProcessingParameterFile(
           'INPUT', 'Source PipelineML file',
-          fileFilter='PipelineML files (*.pml;*.xml)')
+          fileFilter='PipelineML files (*.pml);;XML files (*.xml)')
         self.addParameter(parameter)
 
         # Add the output parameter: a GeoPackage file destination.
